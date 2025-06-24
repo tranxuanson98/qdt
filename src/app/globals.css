@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Open Sans", "Inter", Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.swiper-slide {
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide-active {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.customer-reviews-swiper {
+  .swiper-wrapper {
+    background: #f2f2f2 !important;
+    padding: 50px 0;
+  }
+}
+.marquee-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background: #222;
+  padding: 10px 0;
+}
+
+.marquee-content {
+  display: inline-flex;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+/* 
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+} */
