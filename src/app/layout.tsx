@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "QDT Monitor",
-  description: "QDT Monitor",
+  title: "QDT Company",
+  description: "QDT Company",
 };
 
 export default function RootLayout({
