@@ -29,6 +29,15 @@
   src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "gold-man";
+  src: url("/fonts/Goldman-Regular.ttf") format("truetype");
+}
+
+.font-goldman {
+  font-family: 'gold-man', "Inter", Helvetica, sans-serif;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
