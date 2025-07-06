@@ -8,7 +8,7 @@ export function FooterV2() {
 
   const navItems = [
     { text: "Trang chủ", href: "/" },
-    { text: "Đại lý", href: "/#distributor" },
+    { text: "Đại lý", href: "https://manhinh.qdt.com.vn/#distributor" },
   ];
   // const twitter = (
   //   <a
